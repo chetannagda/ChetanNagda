@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Garamond;
+    background-color: black;
+    color: white;
+}
+
+.name {
+    margin: auto;
+    padding: 20px;
+}
+
+
+body {
+   background-color: #c3c3c3;
+    color: black;
+    
+}
+
+
+body h1 {
+    font-family: monospace ;
+    text-align: center;
+}
+
+/* typing animation */
+.name {
+    height: auto;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
+  
+  .h1 {
+    width: 45ch;
+    animation: typing 2.5s steps(30), blink .5s step-end infinite alternate ;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1em;
+}
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+    to {width: 55%}
+  }
+      
+  @keyframes blink {
+    70% {
+      border-color: transparent
+    }
+}
+
+
+/* other accounts */
+ul {
+    margin: auto;
+    height: auto;
+    width: 45vw;
+    color: black;
+}
+
+ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+}
+
+ul li a:hover{
+    text-decoration:underline;
+    text-underline-offset: 10px;
+    text-underline-position: below;
+    text-shadow: wheat;
+}
+
+/* About */
+.about h2{
+    text-align: center;
+    font-family: Garamond;
+}
+
+.about p{
+    padding: 10px;
+    font-family: monospace;
+    font-size: larger;
+    font-weight:500;
+}
+
+a{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+}
+
+a:hover{
+    text-decoration:underline;
+    text-shadow: wheat;
+}
+
+.about{
+    text-align: center;
+    font-family: monospace;
+    font-size: larger;
+    font-weight: bolder;
+}
